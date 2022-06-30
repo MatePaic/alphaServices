@@ -1,0 +1,32 @@
+<div class="col-8" style="margin-top: -50px;">
+  <div class="grid">
+    <div class="col-12 lg:col" id="createOrderButton">
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Create New Order"
+        class="p-button-rounded"
+        routerLink="/orders/form">
+      </button>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="col-12 lg:col" id="logoutButton">
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Logout"
+        class="p-button-rounded"
+        (click)="onLogout()">
+      </button>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="col-8">
+      <h1>My Orders</h1>
+      <p id="subheader">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+  </div>
+</div>

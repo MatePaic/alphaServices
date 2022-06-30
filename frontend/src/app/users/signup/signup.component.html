@@ -1,0 +1,54 @@
+<div class="content">
+  <div class="grid">
+    <div class="col-12 md:col-8 lg:col-4">
+      <h1>Sign up</h1>
+      <p>Please fill up all the information below</p>
+      <form [formGroup]="sigunUpFormGroup">
+        <div class="grid mt-5">
+          <div class="col-12">
+            <div class="field">
+              <label for="email">Enter email</label><br>
+              <input
+                id="email"
+                type="email"
+                formControlName="email"
+                pInputText
+                placeholder="Enter email"><br>
+              <small *ngIf="signUpForm['email'].invalid && isSubmitted" class="p-error">
+                {{signUpForm['email'].hasError('required')?'Email is required' : 'Please enter a vaild email'}}
+              </small><br>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="field">
+              <label for="password">Enter password</label><br>
+              <input
+                id="password"
+                formControlName="password"
+                type="password"
+                pInputText
+                placeholder="Password"><br>
+                <small *ngIf="signUpForm['password'].invalid && isSubmitted" class="p-error">
+                  Password is required
+                </small><br>
+            </div>
+          </div>
+          <div class="col-12">
+            <p-button
+              label="Register"
+              [style]="{'background-color': '#836048', 'width': '100%'}"
+              (onClick)="onSignup()">
+            </p-button>
+          </div>
+          <div class="col-12" *ngIf="isSubmitted && authError">
+            <small class="p-error">{{authMessage}}</small>
+          </div>
+          <div class="col-12" style="text-align: center;">
+            <p>Already have an account?<a routerLink="/login"> Login</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <app-shared class="hidden md:inline-flex" style="margin-top: -350px;"></app-shared>
+  </div>
+</div>

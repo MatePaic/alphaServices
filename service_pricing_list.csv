@@ -1,0 +1,38 @@
+brand,model,lastSupportedYear,chainChangePrice,oilAndOilFilterChangePrice,airFilterChangePrice,brakeFluidChangePrice
+Aprilia,RS 50,1994,85,23,18,44
+Aprilia,Tuono,1995,77,20,24,42
+Aprilia,RSV4 1100,1991,80,42,17,23
+Aprilia,RSV4 125,1996,58,32,22,38
+Aprilia,RS 125,1992,56,22,30,32
+Aprilia,SR 50,1995,83,28,20,39
+Aprilia,SR 125,1994,82,23,25,28
+Ducati,Panigale V4,1996,71,30,26,45
+Ducati,Scrambler 800,1991,93,44,23,41
+Ducati,Diavel,1991,70,22,29,35
+Ducati,Monster,1991,86,26,17,25
+Ducati,Panigale V2,1991,91,32,15,23
+Ducati,Hypermotard,1991,68,39,20,39
+Ducati,Streetfighter,1996,91,23,28,38
+Yamaha,MT-03,1995,75,36,29,34
+Yamaha,MT-07,1991,50,43,27,43
+Yamaha,MT-09,1994,92,26,20,40
+Yamaha,R1,1993,48,38,25,40
+Yamaha,R6,1995,74,29,27,38
+Yamaha,R7,1991,87,45,28,22
+Yamaha,R125,1991,52,44,24,28
+Kawasaki,Ninja H2,1995,48,37,28,26
+Kawasaki,Ninja 300,1992,44,38,23,26
+Kawasaki,Ninja 650,1991,69,33,27,29
+Kawasaki,Ninja ZX-10R,1993,50,34,24,38
+Kawasaki,Z750,1993,82,30,19,27
+Kawasaki,Z900,1995,89,37,26,43
+Suzuki,Hayabusa,1994,44,36,24,28
+Suzuki,Burgman 400,1992,58,41,15,30
+Suzuki,GSX 600R,1992,95,42,30,43
+Suzuki,GSX 1000R,1994,80,43,24,24
+Suzuki,GSX 750R,1996,79,36,22,25
+Suzuki,GSX 750S,1995,49,45,15,22
+Suzuki,GSX 1000S,1995,100,41,17,30
+Suzuki,GSR 600,1995,99,42,17,43
+Suzuki,GSR 750,1993,57,30,19,36
+Suzuki,GSR 1000,1993,72,41,29,31

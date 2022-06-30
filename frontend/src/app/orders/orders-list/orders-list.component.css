@@ -1,0 +1,112 @@
+.content {
+  padding-right: 108px;
+}
+
+th {
+  width:200px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #737373;
+  background-color: #E5E5E5 !important;
+}
+
+#orderRow{
+  cursor: pointer;
+  background-color: rgba(208, 208, 208, 0.4);
+  width: 85%;
+  border-radius: 15px;
+}
+
+td {
+  width:200px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 84.52%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+}
+
+@media only screen and (min-width: 992px) {
+  #orderNumber {
+    margin-top: -200px;
+  }
+}
+
+
+
+h3{
+  color: #836048;
+}
+
+#center{
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+
+img {
+  border-radius: 20px;
+  background-color: #c3bcbc;
+}
+
+h2 {
+  color: white;
+  margin-top: -470px;
+  margin-left: 20px;
+  left: 1053px;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+.pdf {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  color: #22160F;
+}

@@ -1,0 +1,53 @@
+<div class="content">
+  <div class="grid forms-grid">
+    <div class="col-12 md:col-8 lg:col-4">
+      <h3>Welcome to</h3>
+      <h2>alpha service</h2>
+      <form [formGroup]="loginFormGroup">
+        <div class="grid mt-5">
+          <div class="field col-12">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              formControlName="email"
+              pInputText
+              placeholder="Enter email"><br>
+            <small *ngIf="loginForm['email'].invalid && isSubmitted" class="p-error">
+              {{loginForm['email'].hasError('required')?'Email is required' : 'Please enter a vaild email'}}
+            </small><br>
+          </div>
+          <div class="field col-12">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              formControlName="password"
+              pInputText
+              placeholder="Enter password"><br>
+            <small *ngIf="loginForm['password'].invalid && isSubmitted" class="p-error">
+              Password is required
+            </small><br>
+          </div>
+          <div class="col-12" style="text-align: right;">
+            <a id="reset" routerLink="/reset-password-email">Forgot password</a>
+          </div>
+          <div class="col-12">
+            <p-button
+              label="Login"
+              [style]="{'background-color': '#836048', 'width': '100%'}"
+              (onClick)="onLoginIn()">
+            </p-button>
+          </div>
+          <div class="col-12" *ngIf="isSubmitted && authError">
+            <small class="p-error">{{authMessage}}</small>
+          </div>
+          <div class="col-12" style="text-align: center;">
+            <p>Don't have an account?<a routerLink="/signup"> Signup</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <app-shared class="hidden md:inline-flex" style="margin-top: -350px;"></app-shared>
+  </div>
+</div>

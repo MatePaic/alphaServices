@@ -1,0 +1,97 @@
+
+.content {
+  padding-right: 108px;
+}
+
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 84.52%;
+  letter-spacing: -0.02em;
+  color: #22160F;
+}
+
+
+label {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+input{
+  width: 90%;
+  background-color: #E5E5E5;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+}
+
+p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #737373;
+  margin-top: 10px;
+}
+
+.p-button-rounded {
+  background-color: #836048;
+  font-weight: 700;
+  width: 100%;
+}
+
+.field-checkbox {
+  margin-top: -35px;
+}
+
+::ng-deep .p-calendar input,
+::ng-deep .p-checkbox .p-checkbox-box {
+  background-color: #e5e5e5;
+}
+
+#note {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #3a3939;
+}
+
+span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #222020;
+}
+
+.paragraph {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #737373;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  #order-summary {
+    margin-top: -90px;
+  }
+}

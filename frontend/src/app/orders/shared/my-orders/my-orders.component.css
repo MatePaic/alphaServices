@@ -1,0 +1,48 @@
+h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 84.52%;
+  letter-spacing: -0.02em;
+  color: #22160F;
+}
+
+.p-button-rounded {
+  background-color: #836048;
+  width: 15rem;
+  font-weight: 700;
+  border-radius: 12px;
+}
+
+.content {
+  padding-right: 108px;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+#subheader{
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 992px) {
+  #createOrderButton {
+    margin-top: -100px;
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #logoutButton {
+    margin-top: -50px;
+    text-align: right;
+  }
+}

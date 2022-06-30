@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:normal,wght@0,600;&display=swap');</style>
+        <link rel="stylesheet" href="/public/assets/styles.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <div><img src="/public/images/logo.png" style="margin-right: 5px;"><img src="/public/images/alpha.png"></div>
+
+            <div style="margin-top: 44px;">
+                <span class="title">Thank you for your order!</span>
+            </div>
+            <div>
+                <span class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
+            </div>
+            <div style="margin-top: 60px;">
+                <span class="sub-title">Order Summary #<%= orderNumber %></span>
+            </div>
+            <div>
+                <span class="text"><%= serviceDate %></span>
+            </div>
+
+            <div style="margin-top: 50px;">
+                <% if(chainChangePrice > 0){ %>
+                    <div>
+                        <p class="text">Chain Change Price: <p class="text" style="text-align: right; margin-top: -35px;"><%= chainChangePrice %>$</p></p>
+                    </div>
+                <% } %>
+                <% if(oilChangePrice > 0){ %>
+                    <div>
+                        <p class="text">Oil Change Price: <p class="text" style="text-align: right; margin-top: -35px;"><%= oilChangePrice %>$</p></p>
+                    </div>
+                <% } %>
+                <% if(airFilterChangePrice > 0){ %>
+                    <div>
+                        <p class="text">Air Filter Change Price: <p class="text" style="text-align: right; margin-top: -35px;"><%= airFilterChangePrice %>$</p></p>
+                    </div>
+                <% } %>
+                <% if(brakeFluidChangePrice > 0){ %>
+                    <div style="margin-top: -15px;">
+                        <span class="text">Brake Fluid Change Price: <p class="text" style="text-align: right; margin-top: -20px;"><%= brakeFluidChangePrice %>$</p></span>
+                    </div>
+                <% } %>
+    
+                <hr>
+                <% if(fullPrice > 0){ %>
+                    <div style="text-align: right;">
+                        <span class="text">Full Price: <%= fullPrice %>$</span>
+                    </div>
+                <% } %>
+                <% if(discount > 0){ %>
+                    <div style="text-align: right;">
+                        <span class="text">Discount: <%= discount %>$</span>
+                    </div>
+                <% } %>
+                <% if(discountedPrice > 0){ %>
+                    <div style="text-align: right;">
+                        <span class="text-discount-price">Discounted Price: <%= discountedPrice %>$</span>
+                    </div>
+                <% } %>    
+            </div>
+        </div>
+    </body>
+</html>

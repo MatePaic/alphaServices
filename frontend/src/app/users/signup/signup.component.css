@@ -1,0 +1,53 @@
+h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 84.52%;
+  letter-spacing: -0.02em;
+  color: #22160F;
+  margin-top: -50px;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #22160F
+}
+
+label{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #737373;
+}
+
+input {
+  border: 1px solid #D0D0D0;
+  background-color: #E5E5E5;
+  border-radius: 8;
+  width: 100%;
+}
+
+.full-btn {
+  width: 100%;
+}
+p {
+  color: #737373;
+  font-family: 'Poppins';
+  font-weight: 900;
+}
+
+a {
+  color: #22160F;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}

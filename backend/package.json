@@ -1,0 +1,29 @@
+{
+  "name": "motors",
+  "version": "1.0.0",
+  "description": "backend of motors",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-jwt": "^7.7.5",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "html-pdf": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun.js": "^7.0.2",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.8",
+    "mongoose-unique-validator": "^3.1.0",
+    "morgan": "^1.10.0"
+  }
+}

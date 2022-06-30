@@ -1,0 +1,128 @@
+<p-toast></p-toast>
+<div class="content">
+  <my-orders></my-orders>
+  <div *ngIf="createdOrder" class="grid">
+    <div class="col-12 lg:col-8">
+      <p-table [value]="orders" scrollDirection="both" [scrollable]="true" scrollHeight="400px" styleClass="mt-3">
+        <ng-template pTemplate="header">
+          <tr>
+            <th style="width:300px;">OrderId</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Service Date</th>
+            <th>Year</th>
+            <th>Mileage</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-order>
+          <tr (click)="viewOrder(order.id)" id="orderRow" class="mt-3">
+            <td style="width: 300px;">{{order.id}}</td>
+            <td>{{order.brand}}</td>
+            <td>{{order.model}}</td>
+            <td>{{order.serviceDate | date:'longDate'}}</td>
+            <td>{{order.year}}</td>
+            <td>{{order.mileage}}</td>
+            <td style="color: #836048; font-weight: 700; text-decoration: underline;">Description</td>
+            <td>
+              <p-button
+                (click)="deleteOrder(order.id)"
+                styleClass="p-button-danger mr-2"
+                icon="pi pi-trash">
+              </p-button>
+              <p-button
+                (click)="updateOrder(order.id)"
+                styleClass="p-button-success"
+                icon="pi pi-pencil">
+              </p-button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+
+    <div class="col-12 lg:col-4" id="orderNumber">
+      <p-card
+        *ngIf="!!order"
+        header="Thank you for your order"
+        subheader="#{{order?.orderNumber}}!"
+        [style]="{'background-color': '#E5E5E5', 'height': '100%'}"
+        styleClass="p-card-shadow">
+
+        <h1>Order Summary</h1>
+        <p>{{order?.serviceDate | date:'medium'}}</p>
+
+        <div class="mt-8">
+          <div *ngIf="order?.chainChangePrice" class="grid">
+            <div class="col">
+              <span>Chain change</span>
+            </div>
+            <div class="col" style="text-align: right;">
+              <span>{{order?.chainChangePrice | currency:'USD':'$':'0.0-2'}}</span>
+            </div>
+          </div>
+          <div *ngIf="order?.oilChangePrice" class="grid">
+            <div class="col">
+              <span>Oil and oil filter change</span>
+            </div>
+            <div class="col" style="text-align: right;">
+              <span>{{order?.oilChangePrice | currency:'USD':'$':'0.0-2'}}</span>
+            </div>
+          </div>
+          <div *ngIf="order?.airFilterChangePrice" class="grid">
+            <div class="col">
+              <span>Air and air filter change</span>
+            </div>
+            <div class="col" style="text-align: right;">
+              <span>{{order?.airFilterChangePrice | currency:'USD':'$':'0.0-2'}}</span>
+            </div>
+          </div>
+          <div *ngIf="order?.brakeFluidChangePrice" class="grid">
+            <div class="col">
+              <span>Brake and brake filter change</span>
+            </div>
+            <div class="col" style="text-align: right;">
+              <span>{{order?.brakeFluidChangePrice | currency:'USD':'$':'0.0-2'}}</span>
+            </div>
+        </div>
+
+        <hr>
+        <div *ngIf="order?.fullPrice" class="grid" style="text-align: right;">
+          <div class="col" style="text-align: right;">
+            <span>Full Price: {{order?.fullPrice | currency:'USD':'$':'0.0-2'}}</span>
+          </div>
+        </div>
+        <div *ngIf="order?.discount" class="grid" style="text-align: right;">
+          <div class="col" style="text-align: right;">
+            <span>Discount: {{order?.discount | currency:'USD':'$':'0.0-2'}}</span>
+          </div>
+        </div>
+        <div *ngIf="order?.discountedPrice" class="grid" style="text-align: right;">
+          <div class="col" style="text-align: right;">
+            <span>Discounted Price: {{order?.discountedPrice | currency:'USD':'$':'0.0-2'}}</span>
+          </div>
+        </div>
+        </div>
+        <div class="mt-5" style="cursor: pointer;">
+          <a id="pdf" (click)="downloadOrderSummery(order.id)">Download Pdf </a>
+          <i class="pi pi-download"></i>
+        </div>
+        <img alt="Card" src="../../../assets/Images/dragster-rr-xl 1.png" style="width: 100%; height: 100%; margin-top: 3rem;">
+      </p-card>
+    </div>
+  </div>
+  <div class="grid" *ngIf="!createdOrder">
+    <div class="col-8">
+      <div id="center">
+        <p>You have no orders</p>
+        <h3>Create new Order</h3>
+      </div>
+    </div>
+    <div class="col-4" style="margin-top: -215px;">
+      <img src="../../../assets/Images/download1.png">
+      <h2>ALPHA</h2>
+    </div>
+  </div>
+</div>
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000" rejectButtonStyleClass="p-button-text"></p-confirmDialog>
