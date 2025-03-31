@@ -42,3 +42,5 @@
     ###frontend
     cd ../frontend
     ng serve
+
+<img width="1079" alt="image" src="https://github.com/user-attachments/assets/79c63dce-1ebb-48d4-a5eb-93107af129d5" />
